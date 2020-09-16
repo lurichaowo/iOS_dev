@@ -9,18 +9,34 @@
 import UIKit
 
 class HighScoresViewController: UITableViewController {
+    // tableView splits up delegate duties into 2 helpers:
+        // UITableviewDataSource: for putting rows into tables
+        // UITableViewDelegate for handling taps on rows and other tasks
+    // to use table view in the UIViewController
+        // need to connect both manually while TableView does it automatically
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
+    // _ tableView: UITableView parameter is the TableView obj that is invoked for these methids
+        // so we dont need to use @IBOutlet
+    // numberofRowsInSection parameter is section #
+    // cellForRowAt and didSelectRowAt parameters is the indexPath
+    
+    // _ tableView -> obj name
+        // _ is for when no external name is needed
+    // :UITableView -> parameter type
+    // numberOfRowsInSection -> external parameter name (the method called)
+    // section -> local parameter name
+        // data type is Int
+    
+    // tableView(_:numberOfRowsInSection)
+        // = tableview._.numberOfRowsInSection in C or Java
+    // if there is a -> then there is a return value
+        // if no -> then not	
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -56,5 +72,13 @@ class HighScoresViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    // MARK:- Table View Delegate
+    // didSelectRowAt is a tableview delegate method
+        // cllaed when user taps on a cell
+        // turns grey only when tapped on before turning back
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
