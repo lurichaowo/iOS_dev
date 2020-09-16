@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E224E0B2512916A0021F876 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E224E0A2512916A0021F876 /* HighScoresViewController.swift */; };
 		7E98CFEA2500493C005409C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFE92500493C005409C0 /* AppDelegate.swift */; };
 		7E98CFEC2500493C005409C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFEB2500493C005409C0 /* SceneDelegate.swift */; };
 		7E98CFEE2500493C005409C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFED2500493C005409C0 /* ViewController.swift */; };
 		7E98CFF12500493C005409C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E98CFEF2500493C005409C0 /* Main.storyboard */; };
 		7E98CFF32500494F005409C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E98CFF22500494F005409C0 /* Assets.xcassets */; };
 		7E98CFF62500494F005409C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E98CFF42500494F005409C0 /* LaunchScreen.storyboard */; };
+		7EA691E02508266E00218C78 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA691DF2508266E00218C78 /* AboutViewController.swift */; };
+		7EA691E22508324300218C78 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = 7EA691E12508324200218C78 /* Bullseye.html */; };
+		7EA691E5250832FC00218C78 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA691E4250832FC00218C78 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E224E0A2512916A0021F876 /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		7E98CFE62500493C005409C0 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E98CFE92500493C005409C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E98CFEB2500493C005409C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		7E98CFF22500494F005409C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E98CFF52500494F005409C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E98CFF72500494F005409C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA691DF2508266E00218C78 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7EA691E12508324200218C78 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../../../Downloads/iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
+		7EA691E4250832FC00218C78 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA691E5250832FC00218C78 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				7E98CFE82500493C005409C0 /* Bullseye */,
 				7E98CFE72500493C005409C0 /* Products */,
+				7EA691E3250832FC00218C78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +66,26 @@
 		7E98CFE82500493C005409C0 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
+				7EA691E12508324200218C78 /* Bullseye.html */,
 				7E98CFE92500493C005409C0 /* AppDelegate.swift */,
 				7E98CFEB2500493C005409C0 /* SceneDelegate.swift */,
 				7E98CFED2500493C005409C0 /* ViewController.swift */,
+				7EA691DF2508266E00218C78 /* AboutViewController.swift */,
 				7E98CFEF2500493C005409C0 /* Main.storyboard */,
+				7E224E0A2512916A0021F876 /* HighScoresViewController.swift */,
 				7E98CFF22500494F005409C0 /* Assets.xcassets */,
 				7E98CFF42500494F005409C0 /* LaunchScreen.storyboard */,
 				7E98CFF72500494F005409C0 /* Info.plist */,
 			);
 			path = Bullseye;
+			sourceTree = "<group>";
+		};
+		7EA691E3250832FC00218C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA691E4250832FC00218C78 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E98CFF62500494F005409C0 /* LaunchScreen.storyboard in Resources */,
+				7EA691E22508324300218C78 /* Bullseye.html in Resources */,
 				7E98CFF32500494F005409C0 /* Assets.xcassets in Resources */,
 				7E98CFF12500493C005409C0 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E224E0B2512916A0021F876 /* HighScoresViewController.swift in Sources */,
 				7E98CFEE2500493C005409C0 /* ViewController.swift in Sources */,
 				7E98CFEA2500493C005409C0 /* AppDelegate.swift in Sources */,
+				7EA691E02508266E00218C78 /* AboutViewController.swift in Sources */,
 				7E98CFEC2500493C005409C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
