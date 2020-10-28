@@ -15,28 +15,29 @@ class HighScoresViewController: UITableViewController {
     // to use table view in the UIViewController
         // need to connect both manually while TableView does it automatically
     
-    var row0item: HighScoreItem?
+    var row0item: HighScoreItem
         // instead of row0item = HighScoreItem()
-            // is initializer method creating new empty instance with default values defined in class
+            // is initializer method creating new empty instance with default values defined in class	
         // so use type annotation instead just to indicate type
             // won't have a value yet
-    var row1item: HighScoreItem?
-    var row2item: HighScoreItem?
-    var row3item: HighScoreItem?
-    var row4item: HighScoreItem?
+    var row1item: HighScoreItem
+    var row2item: HighScoreItem
+    var row3item: HighScoreItem
+    var row4item: HighScoreItem
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        row0item?.name = "The reader of this book"
-        row0item?.score = 50000
-        row1item?.name = "Manda"
-        row1item?.score = 10000
-        row2item?.name = "Joey"
-        row2item?.score = 5000
-        row3item?.name = "Adam"
-        row3item?.score = 1000
-        row4item?.name = "Eli"
-        row4item?.score = 500
+        row0item.name = "The reader of this book"
+        row0item.score = 50000
+        row1item.name = "Manda"
+        row1item.score = 10000
+        row2item.name = "Joey"
+        row2item.score = 5000
+        row3item.name = "Adam"
+        row3item.score = 1000
+        row4item.name = "Eli"
+        row4item.score = 500
+        
     }
 
     // MARK: - Table view data source

@@ -9,6 +9,6 @@
 import Foundation
 
 class HighScoreItem{
-    var name = ""
-    var score = 0
+    var name: String = ""
+    var score: Int  = 0
 }
