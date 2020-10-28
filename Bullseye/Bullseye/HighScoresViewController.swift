@@ -15,9 +15,28 @@ class HighScoresViewController: UITableViewController {
     // to use table view in the UIViewController
         // need to connect both manually while TableView does it automatically
     
-
+    var row0item: HighScoreItem?
+        // instead of row0item = HighScoreItem()
+            // is initializer method creating new empty instance with default values defined in class
+        // so use type annotation instead just to indicate type
+            // won't have a value yet
+    var row1item: HighScoreItem?
+    var row2item: HighScoreItem?
+    var row3item: HighScoreItem?
+    var row4item: HighScoreItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        row0item?.name = "The reader of this book"
+        row0item?.score = 50000
+        row1item?.name = "Manda"
+        row1item?.score = 10000
+        row2item?.name = "Joey"
+        row2item?.score = 5000
+        row3item?.name = "Adam"
+        row3item?.score = 1000
+        row4item?.name = "Eli"
+        row4item?.score = 500
     }
 
     // MARK: - Table view data source
@@ -51,24 +70,24 @@ class HighScoresViewController: UITableViewController {
             // use .row to property to find out the row that cell is intended
             // can use .section to between sections like in a phone book with different start letter of a name
         if indexPath.row == 0{
-            nameLabel.text = "The reader of this book"
-            scoreLabel.text = "50000"
+            nameLabel.text = row0item?.name
+            scoreLabel.text = String(row0item?.score)
         }
         else if indexPath.row == 1{
-            nameLabel.text = "Manda"
-            scoreLabel.text = "10000"
+            nameLabel.text = row1item?.name
+            scoreLabel.text = init?(String(row1item?.score))
         }
         else if indexPath.row == 2{
-            nameLabel.text = "Joey"
-            scoreLabel.text = "5000"
+            nameLabel.text = row2item.name
+            scoreLabel.text = String(row2item.score)
         }
         else if indexPath.row == 3{
-            nameLabel.text = "Adam"
-            scoreLabel.text = "1000"
+            nameLabel.text = row3item.name
+            scoreLabel.text = String(row3item.score)
         }
         else if indexPath.row == 4{
-            nameLabel.text = "Eli"
-            scoreLabel.text = "500"
+            nameLabel.text = row4item.name
+            scoreLabel.text = String(row4item.score)
         }
         
         return cell

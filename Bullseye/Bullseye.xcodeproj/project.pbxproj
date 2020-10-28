@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E224E0B2512916A0021F876 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E224E0A2512916A0021F876 /* HighScoresViewController.swift */; };
+		7E224E102512A1F80021F876 /* HighScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E224E0F2512A1F80021F876 /* HighScoreItem.swift */; };
 		7E98CFEA2500493C005409C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFE92500493C005409C0 /* AppDelegate.swift */; };
 		7E98CFEC2500493C005409C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFEB2500493C005409C0 /* SceneDelegate.swift */; };
 		7E98CFEE2500493C005409C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E98CFED2500493C005409C0 /* ViewController.swift */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		7E224E0A2512916A0021F876 /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
+		7E224E0C25129DC30021F876 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7E224E0F2512A1F80021F876 /* HighScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreItem.swift; sourceTree = "<group>"; };
 		7E98CFE62500493C005409C0 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E98CFE92500493C005409C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E98CFEB2500493C005409C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +76,11 @@
 				7EA691DF2508266E00218C78 /* AboutViewController.swift */,
 				7E98CFEF2500493C005409C0 /* Main.storyboard */,
 				7E224E0A2512916A0021F876 /* HighScoresViewController.swift */,
+				7E224E0C25129DC30021F876 /* README.md */,
 				7E98CFF22500494F005409C0 /* Assets.xcassets */,
 				7E98CFF42500494F005409C0 /* LaunchScreen.storyboard */,
 				7E98CFF72500494F005409C0 /* Info.plist */,
+				7E224E0F2512A1F80021F876 /* HighScoreItem.swift */,
 			);
 			path = Bullseye;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E224E0B2512916A0021F876 /* HighScoresViewController.swift in Sources */,
+				7E224E102512A1F80021F876 /* HighScoreItem.swift in Sources */,
 				7E98CFEE2500493C005409C0 /* ViewController.swift in Sources */,
 				7E98CFEA2500493C005409C0 /* AppDelegate.swift in Sources */,
 				7EA691E02508266E00218C78 /* AboutViewController.swift in Sources */,
